@@ -15,3 +15,13 @@ def assign_rooms(attendees)
     "Hello, #{name}! You'll be assigned to room #{index+1}!"
   end
 end
+
+def printer
+  attendees.each do |name|
+    puts badge_maker(name)
+  attendees.each_with_index do |name, index|
+    puts "Hello, #{name}! You'll be assigned to room #{index+1}!"
+  end
+end
+
+  
